@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Registration</title>
+</head>
+<body>
+	<fieldset>
+		<legend>Student Registration Process</legend>
+		<form action="TestServlet" method="post" enctype="multipart/form-data">
+			<table>
+				<tr>
+					<td>First Name :</td>
+					<td><input type="text" name="fName" required></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" name="lName"></td>
+				</tr>
+
+				<tr>
+					<td>DOB:</td>
+					<td><input type="date" name="dob" ></td>
+				</tr>
+
+				<tr>
+					<td>Email:</td>
+					<td><input type="email" name="email" ></td>
+				</tr>
+
+				<tr>
+					<td>Gender:</td>
+					<td><input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female</td>
+				</tr>
+
+				<tr>
+					<td>Skills:</td>
+					<td><input type="checkbox" name="skills" value="java">Java
+						<input type="checkbox" name="skills" value="python">Python
+						<input type="checkbox" name="skills" value="C">C <input
+						type="checkbox" name="skills" value="C++">C++</td>
+				</tr>
+
+				<tr>
+					<td>ContactNo:</td>
+					<td><input type="tel" name="contactNo" ></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><textarea name="address" rows=3 cols="25" ></textarea></td>
+				</tr>
+				<tr>
+					<td>Branch :</td>
+					<td><select name="branch">
+							<option selected="selected">JNTU</option>
+							<option>DilshukNagar</option>
+							<option>Kukatpally</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Document :</td>
+					<td><input type="file" name="docName"></td>
+				</tr>
+				<tr>
+					<td>Image :</td>
+					<td><input type="file" accept="image/*" name="imageName">
+					</td>
+				</tr>
+				<tr>
+					<td>Audio :</td>
+					<td><input type="file" accept="audio/*" name="audioFileName">
+					</td>
+				</tr>
+				<tr>
+					<td>Video :</td>
+					<td><input type="file" accept="video/*" name="videoFileName">
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2"><input type="submit" value="Register"></td>
+
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+	
+	<form action="FetchAllStudents" method="get">
+	
+		<input type="submit" value ="ViewAllStudents">
+	</form>
+
+	
+</body>
+</html>
