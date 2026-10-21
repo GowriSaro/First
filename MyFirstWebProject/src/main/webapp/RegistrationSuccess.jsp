@@ -11,5 +11,7 @@
 		String firstName = request.getParameter("fname");
 	%>
 	Registration done successfully for <%= firstName %>
+
+	Edited
 </body>
 </html>
